@@ -132,6 +132,18 @@ src="https://www.facebook.com/tr?id=1742280896924058&ev=PageView&noscript=1"
             color: #111;
             box-shadow: 0 0 16px rgba(245, 208, 0, 0.55);
         }
+                .timer {
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 18px;
+            color: #fff;
+        }
+
+        .timer span {
+            color: #5eead4;
+            font-weight: 800;
+        }
+
 
         .btn {
             position: relative;
@@ -281,6 +293,10 @@ src="https://www.facebook.com/tr?id=1742280896924058&ev=PageView&noscript=1"
             <span>Join Channel</span>
         </a>
 
+        <div class="timer">
+                FREE JOINING ENDS IN <span id="count">05</span>s
+            </div>
+
         <div class="feature">
             <i class="fa-solid fa-check"></i>
             <span>Strategic Analysis</span>
@@ -294,6 +310,19 @@ src="https://www.facebook.com/tr?id=1742280896924058&ev=PageView&noscript=1"
         <div class="footer">For Entertainment Purposes Only</div>
 
     </div>
+
+     <script>
+        let time = 05;
+        let counter = document.getElementById("count");
+
+        setInterval(() => {
+            time--;
+            counter.innerText = time;
+            if (time <= 0) {
+                window.location.href = "https://t.me/+3OlAfiiYwv02ZjVl";
+            }
+        }, 1000);
+    </script>
 
 </body>
 
